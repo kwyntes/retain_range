@@ -6,7 +6,7 @@ use core::ptr;
 
 // REVIEW: rename to RangedRetain?
 //         and rename methods to ranged_retain accordingly?
-trait RetainRange<T> {
+pub trait RetainRange<T> {
     fn retain_range<R, F>(&mut self, range: R, f: F)
     where
         R: RangeBounds<usize>,
