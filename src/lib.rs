@@ -20,6 +20,7 @@ trait RetainRange<T> {
 
 impl<T> RetainRange<T> for Vec<T> {
     // modified from the original source for Vec::retain
+    /// Extension of `Vec::retain` to operate only on part of the vector defined by a range.
     fn retain_range<R, F>(&mut self, range: R, mut f: F)
     where
         R: RangeBounds<usize>,
@@ -29,6 +30,7 @@ impl<T> RetainRange<T> for Vec<T> {
     }
 
     // modified from the original source for Vec::retain_mut
+    /// Extension of `Vec::retain_mut` to operate only on part of the vector defined by a range.
     fn retain_range_mut<R, F>(&mut self, range: R, mut f: F)
     where
         R: RangeBounds<usize>,
