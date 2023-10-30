@@ -1,6 +1,6 @@
 [package]
 name = "retain_range"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Extension of Vec::retain to operate only on part of the vector defined by a range."
 repository = "https://github.com/kwyntes/retain_range"
